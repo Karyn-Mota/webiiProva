@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Eventos</title>
+</head>
+<body>
+
+<h1>Adicionar Evento</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Salvar</button>
+</form>
+
+<a href="/">Ver lista</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Eventos</title>
+</head>
+<body>
+
+<h1>Lista de Eventos</h1>
+
+<ul>
+    {% for evento in eventos %}
+        <li>{{ evento.nome }} - {{ evento.local }}</li>
+    {% empty %}
+        <li>Nenhum evento ainda</li>
+    {% endfor %}
+</ul>
+
+<a href="/novo/">Ir para o formulário</a>
+</body>
+</html>
